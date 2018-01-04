@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="img/favicon-gradient.png">
   </head>
 
   <body id="page-top">
@@ -24,7 +24,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="background:#fff">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="navbar-logo" src="img/logo-blue.png" /></a>
+        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="navbar-logo" src="img/logo-fill-flat.png" /></a> -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="navbar-logo" src="img/logo-fill-gradient.png" /></a>
+        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="navbar-logo" src="img/logo-blue.png" /></a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
             <img class="full-width" src="img/icon-toggler.png" alt="">
@@ -202,7 +204,7 @@
                     Iklan Anda Terpasang
                   </h4>
                   <p class="section-item-content text-center">
-                    Kami akan memasang iklan anda si tempat yang telah disepakati.
+                    Kami akan memasang iklan anda di tempat yang telah disepakati.
                   </p>
                 </div>
               </div>
@@ -429,18 +431,18 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h3 class="section-title text-center">Hubungi Kami</h3>
-            <form class="" action="index.html" method="post">
+            <!-- <form class="" action="index.html" method="post"> -->
               <div class="form-group">
                 <label for="">Identitas Diri</label>
               </div>
-              <input type="text" class="form-control" name="" placeholder="Masukkan nama Anda">
+              <input type="text" class="form-control" name="name" placeholder="Masukkan nama Anda">
 
               <div class="row">
                 <div class="col-md-6">
-                  <input type="text" class="form-control"  name="" placeholder="Masukkan email Anda">
+                  <input type="text" class="form-control"  name="email" placeholder="Masukkan email Anda">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="" placeholder="Masukkan no. telpon/ponsel Anda">
+                  <input type="text" class="form-control" name="phone" placeholder="Masukkan no. telpon/ponsel Anda">
                 </div>
               </div>
               <div class="form-group">
@@ -448,16 +450,16 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <select class="form-control" name="" placeholder="Pilih Jenis Bisnis">
-                    <option value="option">Makanan dan Minuman</option>
-                    <option value="option">Pakaian</option>
-                    <option value="option">Perlengkapan Olahraga</option>
-                    <option value="option">Elektronik</option>
-                    <option value="option">Lainnya</option>
+                  <select class="form-control" name="product_type" placeholder="Pilih Jenis Bisnis">
+                    <option>Makanan dan Minuman</option>
+                    <option>Pakaian</option>
+                    <option>Perlengkapan Olahraga</option>
+                    <option>Elektronik</option>
+                    <option>Lainnya</option>
                   </select>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control"  name="" placeholder="Masukkan nama produk">
+                  <input type="text" class="form-control"  name="product_name" placeholder="Masukkan nama produk">
                 </div>
               </div>
               <div class="form-group">
@@ -465,28 +467,28 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <select class="form-control" name="" placeholder="Pilih Jenis Kelamin">
-                    <option value="option">Semua Jenis Kelamin</option>
-                    <option value="option">Laki-laki</option>
-                    <option value="option">Perempuan</option>
+                  <select class="form-control" name="target_gender" placeholder="Pilih Jenis Kelamin">
+                    <option>Semua Jenis Kelamin</option>
+                    <option>Laki-laki</option>
+                    <option>Perempuan</option>
                   </select>
                 </div>
                 <div class="col-md-6">
-                  <select class="form-control" name="" placeholder="Pilih Umur">
-                    <option value="option">Semua Umur</option>
-                    <option value="option">0-5 tahun</option>
-                    <option value="option">5-10 tahun</option>
-                    <option value="option">10-17 tahun</option>
-                    <option value="option">17-25 tahun</option>
-                    <option value="option">25-40 tahun</option>
-                    <option value="option">diatas 40 tahun</option>
+                  <select class="form-control" name="target_age" placeholder="Pilih Umur">
+                    <option>Semua Umur</option>
+                    <option>0-5 tahun</option>
+                    <option>5-10 tahun</option>
+                    <option>10-17 tahun</option>
+                    <option>17-25 tahun</option>
+                    <option>25-40 tahun</option>
+                    <option>diatas 40 tahun</option>
                   </select>
                 </div>
               </div>
 
 
-              <input type="submit" name="" class="btn btn-secondary" value="Kirim" style="margin-top:20px;">
-            </form>
+              <button name="" class="btn btn-secondary" style="margin-top:20px;" id="inquiryBtn">Kirim</button>
+            <!-- </form> -->
           </div>
         </div>
       </div>
@@ -500,10 +502,10 @@
           <div class="col-lg-8 mx-auto">
             <div class="row">
               <div class="col-md-8">
-                <input type="text" class="form-control" name="" value="" placeholder="Masukkan Email">
+                <input type="email" class="form-control" name="email_subscribe" value="" placeholder="Masukkan Email">
               </div>
               <div class="col-md-4">
-                <a href="#" class="btn btn-secondary full-width">Berlangganan</a>
+                <button class="btn btn-secondary full-width" id="subscribeBtn">Berlangganan</button>
               </div>
             </div>
           </div>
@@ -543,6 +545,24 @@
       <!-- /.container -->
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCAKsAB2fCM67kGGbrQfnLcHpQUtiuvsXo",
+        authDomain: "adhub-idgw.firebaseapp.com",
+        databaseURL: "https://adhub-idgw.firebaseio.com",
+        projectId: "adhub-idgw",
+        storageBucket: "",
+        messagingSenderId: "544560096274"
+      };
+      firebase.initializeApp(config);
+      var db = firebase.firestore();
+      var subscribers = db.collection('subscribers');
+      var inquiries = db.collection('inquiries');
+    </script>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -553,28 +573,90 @@
     <!-- Custom JavaScript for ths theme -->
     <script src="js/scrolling-nav.js"></script>
     <script type="text/javascript">
-      $(function(){
+      var subscribeBtn = $('#subscribeBtn');
+      var emailSubscribe = $('[name="email_subscribe"]');
 
-       var scrollheight = $('header').height(); // height of entire document
-       var windowheight = window.innerHeight; // height of browser window
+      var inquiryBtn = $('#inquiryBtn');
+
+      $(function(){
 
        $(window).scroll(function(){
          var scrollheight = $('header').height(); // height of entire document
          var windowheight = window.innerHeight; // height of browser window
 
          var scrolltop = window.pageYOffset;// get number of pixels document has scrolled vertically
-         var scrollamount = (scrolltop / (scrollheight-windowheight)) * -50; // get amount scrolled (in %)
-         // cat.style.left = -75 + scrollamount + '%'; // set position of cat in percentage (starts at -100%)
-          if (scrolltop > windowheight -100){
+          if (scrolltop > windowheight -200){
          	$('#mainNav').fadeIn();
          } else {
          	$('#mainNav').fadeOut();
          }
 
        });
+      });
 
+      inquiryBtn.on('click',function(){
+        var email = $('[name="email"]').val();
+        var phone = $('[name="phone"]').val();
+        if(isEmail(email) && isPhone(phone)){
+          var name = $('[name="name"]').val();
+          var productType = $('[name="product_type"]').val();
+          var productName = $('[name="product_name"]').val();
+          var targetAge = $('[name="target_age"]').val();
+          var targetGender = $('[name="target_gender"]').val();
+          if(name && productType && productName && targetAge && targetGender){
+            inquiries.add({
+              name: name,
+              email: email,
+              phone: phone,
+              product_type: productType,
+              product_name: productName,
+              target_age: targetAge,
+              target_gender: targetGender
+            }).then(function(docRef){
+              console.log("Document written with ID: ", docRef.id);
+              $('[name="email"],[name="phone"],[name="name"],[name="product_type"],[name="product_name"],[name="target_age"],[name="target_gender"]').val('');
+              alert('Terima kasih telah mengirimkan permohonan! Kami akan mengirimkan email rekomendasi cara yang efektif untuk beriklan');
+
+            }).catch(function(error){
+              alert('Tidak dapat mengirim permohonan. Silakan refresh halaman ini dan isi kembali formulir permohonan.');
+            });
+          }
+          else{
+            alert('Mohon isi semua data dengan lengkap');
+          }
+        }
+
+        else{
+          alert('Anda memasukkan alamat email/ no.telepon yang tidak sesuai. Mohon periksa kembali email dan no. telepon yang anda masukkan.')
+        }
 
       });
+
+      subscribeBtn.on('click',function(){
+        var subscriber = emailSubscribe.val();
+        if (isEmail(subscriber)){
+          subscribers.add({email:subscriber}).then(function(docRef){
+             console.log("Document written with ID: ", docRef.id);
+             emailSubscribe.val('');
+             alert('Terima kasih telah Berlangganan! Nantikan kabar terbaru dari kami.');
+          }).catch(function(error){
+            alert('Anda tidak dapat memasukkan email yang telah berlangganan. Mohon masukkan email yang lain.');
+          });
+        }
+        else{
+          alert('Alamat email yang anda masukkan tidak valid. Mohon untuk mengisi kembali alamat email anda.');
+        }
+      });
+
+      function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+      }
+
+      function isPhone(number){
+        var regex = /[0-9\-\(\)\s]+$/;
+        return regex.test(number);
+      }
     </script>
 
   </body>
